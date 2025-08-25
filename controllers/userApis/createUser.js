@@ -19,7 +19,10 @@ export const createUser = async (req, res) => {
 
     // hashed password
     const hashedPassword = bcrypt.hashSync(password, 10);
-    if (email === "oshiapiserena.com" || "edirindeborah@gmail.com") {
+    if (
+      email === "oshiapiserena@gmail.com" ||
+      email === "edirindeborah@gmail.com"
+    ) {
       const adminUser = new User({
         ...req.body,
         password: hashedPassword,
