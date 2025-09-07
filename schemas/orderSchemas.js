@@ -27,9 +27,10 @@ const orderSchema = new mongoose.Schema(
         },
       },
     ],
+    // from cart.totalCartPrice
     totalAmount: {
       type: Number,
-      required: true, // from cart.totalCartPrice
+      required: true,
     },
     paymentStatus: {
       type: String,
