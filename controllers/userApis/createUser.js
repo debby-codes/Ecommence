@@ -46,8 +46,7 @@ export const createUser = async (req, res) => {
         subject: "Successfully created an account ",
         body: `<h1> Welcome to ecommence ${userName} </h1>
         <p>Here is youur otp ${otp} proceed to verify your account </p>
-        <p>Please procced to make a post and enjoy the experience</p>
-         <p>Your username is ${process.env.SUPPORT} </p`,
+        <p>Please procced to make a post and enjoy the experience</p>`,
       };
 
       await sendMail(mailObj);

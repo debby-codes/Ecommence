@@ -37,7 +37,7 @@ const orderSchema = new mongoose.Schema(
       default: "pending",
     },
     paymentReference: {
-      type: String, // from Paystack
+      type: String,
     },
   },
   { timestamps: true }
